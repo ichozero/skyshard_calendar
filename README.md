@@ -1,5 +1,7 @@
 # 🌟 Sky: Children of the Light - 碎片事件查询工具
 
+[![English](https://img.shields.io/badge/Language-English-blue?style=flat-square)](./README_EN.md) [![中文](https://img.shields.io/badge/语言-中文-red?style=flat-square)](./README.md)
+
 > 一个专为《光遇》国服玩家设计的碎片事件时间查询与进度跟踪工具
 
 这是一个精美的 Web 应用程序，用于查询《光遇》国服碎片事件的详细信息。它采用现代化的毛玻璃设计风格，帮助玩家精确追踪游戏中的碎片事件，合理规划游戏时间，确保不错过任何重要的碎片收集机会。
@@ -140,8 +142,8 @@ skyshard-calendar/
 
 ## 🔗 项目链接
 
-- **🌟 在线预览**: [光遇国服碎片时间查询](https://ichozero.github.io/skyshard-query/)
-- **📱 GitHub 仓库**: [ichozero/skyshard-query](https://github.com/ichozero/skyshard-query)
+- **🌟 在线预览**: [光遇国服碎片时间查询](https://ichozero.github.io/skyshard_calendar/)
+- **📱 GitHub 仓库**: [ichozero/skyshard-query](https://github.com/ichozero/skyshard_calendar)
 - **📋 问题反馈**: [Issues](https://github.com/ichozero/skyshard-query/issues)
 
 ## 📸 功能截图
