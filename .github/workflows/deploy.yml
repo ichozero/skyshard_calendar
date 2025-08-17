@@ -1,0 +1,30 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # 确保这里的分支名和你的主分支名一致，通常是 main 或 master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # 你的 dev.md 推荐的是 v16 以上，这里用 v18 比较稳定
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build # 根据你的 package.json，这个命令会运行 webpack --mode production
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist # 这个目录就是你项目里 Webpack 打包后输出的目录
